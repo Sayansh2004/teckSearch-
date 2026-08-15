@@ -1,6 +1,8 @@
-def main():
-    print("Hello from backend!")
+from fastapi import FastAPI
+from starlette import status
 
+app=FastAPI()
 
-if __name__ == "__main__":
-    main()
+@app.get("/", status_code=status.HTTP_200_OK)
+def health_check():
+    return {"message":"server is up and running"}
