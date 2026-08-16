@@ -17,7 +17,8 @@ const navLinks = [
   { label: "Home", to: "/" },
   { label: "About", to: "/about" },
   { label: "Contact Us", to: "/contact" },
-  {label:"Pricing",to:"/pricing"}
+  {label:"Pricing",to:"/pricing"},
+  { label: "Login", to: "/login" },
 ];
 
 export default function Navbar() {
