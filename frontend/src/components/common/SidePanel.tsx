@@ -79,7 +79,7 @@ export default function SidePanel() {
   const expanded = pinned || hovered;
 
   return (
-    <TooltipProvider delayDuration={100}>
+    <TooltipProvider delay={100}>
       <aside
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
